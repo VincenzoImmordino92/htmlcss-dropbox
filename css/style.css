@@ -1,6 +1,6 @@
 :root{
   --white: rgb(255, 255, 255);
-  --dark-blue:#48134192;
+  --dark-blue:#3f8ecfe3;
   --black:rgb(0, 0, 0);
 }
 
@@ -26,7 +26,11 @@ body{
   width: 100%;
   max-width: 1200px;
   margin: 0px auto;
-  padding: 30px;
+  padding: 170px 70px;
+}
+
+.bg{
+  background-color: var(--dark-blue);
 }
 
 .debug{
@@ -40,6 +44,7 @@ body{
 
   h1,h2,h3{
   color: black;
+  font-weight: 800;
   }
 
   h4{
@@ -51,6 +56,7 @@ body{
     height: auto;
     background-color:blue;
     color: white;
+    padding: 10px 20px;
   }
   
   /* inizio header */
@@ -111,17 +117,74 @@ body{
     padding-right:20px;
   }
 
-  .start{
-    padding: 10px 20px;
-  }
+
 
   /* Tornare su hover per far vedere il border  */
 
-  /* inizio main */
+  /* inizio  main */
 
-  .jambo{
+  /* prima section */
+
+  main .bg{
     margin-top: 90px;
-    height: 1000px;
+    height: 800px;
     width: 100%;
-    background-color: var(--dark-blue);
   }
+
+  .container-primary{
+    text-align: center none;
+  }
+
+  .container-primary h1{
+    font-size: 4.5rem;
+    padding-top: 60px;
+  }
+
+  .box-jambo{
+    height: 545px;
+    padding-top: 25px;
+  }
+
+  .box-jambo .box-text{
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    position: relative;
+  }
+
+  .box-jambo .box-text p{
+    padding-top: 10px;
+    padding-bottom:60px;
+  }
+
+  .box-jambo .box-text a{
+    margin-top: 20px;
+  }
+
+  .box-jambo .box-text span{
+    display: inline-block;
+    margin-top: 60px;
+  }
+
+  .box-jambo .box-text i{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2rem;
+  }
+
+
+  .box-jambo .box-img{
+   flex-basis: 100%;
+  }
+
+  .box-jambo .box-img img{
+    width: 128%;
+    height: 119%;
+    object-fit: cover;
+  }
+
+  /* fine prima section */
+
+  /* inizio seconda section */
+  
