@@ -1,3 +1,12 @@
+:root{
+  --white: rgb(255, 255, 255);
+  --dark-blue:#48134192;
+  --black:rgb(0, 0, 0);
+}
+
+
+
+
 *{
   padding: 0px;
   margin: 0px;
@@ -6,4 +15,99 @@
 
 body{
   font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+  
 }
+
+.container-primary{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.container-secondary{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 30px;
+}
+
+.debug{
+  background-color: brown;
+  border: 1px solid rgb(0, 0, 0);
+  }
+
+  .d-flex{
+  display: flex;
+  }
+
+  h1,h2,h3{
+  color: black;
+  }
+
+  h4{
+  color: white;
+  }
+
+  .btn{
+    width: auto;
+    height: auto;
+    background-color:blue;
+    color: white;
+  }
+  
+  /* inizio header */
+
+  header{
+    height: 90px;
+    width: 100%;
+    display: flexbox;
+  }
+
+  header .menu{
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    border-bottom: 1px solid black;
+  }
+
+  /* menu left */
+
+  .menu .menu-left ul{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transition:border-bottom 1px solid black none;
+  }
+
+  .menu .menu-left ul li{
+    list-style-type: none;
+    padding-right:20px;
+  }
+
+  a{
+    color: var(--black);
+    text-decoration: none;
+    text-align: left;
+  }
+
+  /* fine menu left */
+
+  /* inizio menu right */
+
+  .menu .menu-right ul{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transition:border-bottom 1px solid black none;
+  }
+
+  .menu .menu-right ul li{
+    list-style-type: none;
+    padding-right:20px;
+  }
+
+  .start{
+    padding: 10px 20px;
+  }
+
+  /* Tornare su hover per far vedere il border  */
