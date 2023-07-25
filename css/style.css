@@ -1,6 +1,6 @@
 :root{
   --white: rgb(255, 255, 255);
-  --dark-blue:#3f8ecfe3;
+  --dark-blue:#3f8db1e3;
   --black:rgb(0, 0, 0);
 }
 
@@ -19,14 +19,16 @@ body{
 .container-primary{
   width: 100%;
   max-width: 1200px;
+  min-width: 300px;
   margin: 0px auto;
 }
 
 .container-secondary{
-  width: 100%;
+  width: 75%;
   max-width: 1200px;
-  margin: 0px auto;
-  padding: 170px 70px;
+  min-width: 300px;
+  margin: 150px auto;
+ 
 }
 
 .bg{
@@ -42,7 +44,7 @@ body{
   display: flex;
   }
 
-  h1,h2,h3{
+  h1,h3{
   color: black;
   font-weight: 800;
   }
@@ -208,7 +210,7 @@ body{
   /* fine prima section */
 
   /* inizio seconda section */
-  
+
   .business h1{
     font-size: 2.5rem;
   }
@@ -240,14 +242,13 @@ body{
   .box-list-pay{
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 850px;
     width: 100%
    
   }
 
   .box-list-pay .col-pay{
     width: 30%;
-    height: 100%;
+  min-width: auto;
     text-align: center;
     border: 1px solid black;
   }
@@ -364,4 +365,84 @@ body{
     background-color: white;
     color: black;
     margin-top: 10px;
+  }
+
+  /* fine terza section */
+
+  /* inizio quarta section */
+
+  .operation h2{
+    font-size: 2.6rem;
+    margin-bottom: 50px;
+  }
+
+  .box-operation{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .col-operation{
+    height: 500px;
+    width: 324px;
+    margin: 10px;
+   
+    flex-direction: column;
+  }
+
+  .col-operation img{
+    width: 100%;
+    height:52%;
+    object-fit: contain;
+  }
+
+  .col-operation p{
+    margin-top: 20px;
+    font-weight: 600;
+  }
+
+  .text-numer h1{
+    padding: 40px 0px;
+    font-size: 2rem;
+  }
+  
+ /* inizio quinta section */
+
+  .company{
+    height:500px;
+    background-color: darkcyan;
+  }
+  
+  /* fine quinta section */
+
+  /* inizio sesta section */
+
+  .text-subscribe{
+  height: 400px;
+  width: 100%;
+  background-color: var(--dark-blue);
+  }
+
+  .subscribe{
+    margin:0px auto;
+  }
+
+  .subscribe .col-subscribe-left, .col-subscribe-right{
+    align-items: center;
+    height: 400px;
+    width: 100%;
+  }
+
+  .subscribe .col-subscribe-left h2{
+  font-size: 2rem;
+  color: rgb(90, 23, 23);
+  }
+  
+  .subscribe .col-subscribe-right{
+    justify-content: end;
+  }
+
+  .subscribe .col-subscribe-right .btn{
+    background-color: lightgray;
+    color: black;
+    padding: 10px 45px;
   }
