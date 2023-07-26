@@ -27,7 +27,7 @@ body{
   width: 75%;
   max-width: 1200px;
   min-width: 300px;
-  margin: 150px auto;
+  margin: 125px auto;
  
 }
 
@@ -38,6 +38,10 @@ body{
 .debug{
   background-color: brown;
   border: 1px solid rgb(0, 0, 0);
+  }
+
+  a{
+    text-decoration: none;
   }
 
   .d-flex{
@@ -72,7 +76,12 @@ body{
     background-color:blue;
     color: white;
     padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
   }
+
+
+  
 
   .btn-gratis{
     width: auto;
@@ -81,6 +90,7 @@ body{
     color: white;
     text-align: center;
     padding: 10px 10px;
+    cursor: pointer;
 
   }
   
@@ -102,7 +112,6 @@ body{
     flex-direction: row;
     justify-content: space-between;
     height: 100%;
-    border-bottom: 1px solid black;
   }
   
 
@@ -119,11 +128,21 @@ body{
     padding-right:20px;
   }
 
-  a{
+  .menu .menu-left li a, 
+  .menu-right li a{
     color: var(--black);
     text-decoration: none;
     text-align: left;
   }
+
+  .menu .menu-left a:hover, 
+  .menu .menu-right a:hover{
+ text-decoration: underline;
+ text-underline-offset: 38px;
+  }
+
+  
+
 
   /* fine menu left */
 
@@ -140,8 +159,14 @@ body{
     padding-right:20px;
   }
 
+  .menu .menu-right ul .start a{
+    color: white;
+   
+  }
 
-
+  .menu .menu-right ul .start:hover{
+    background-color: rgb(71, 113, 250);
+  }
   /* Tornare su hover per far vedere il border  */
 
   /* inizio  main */
@@ -385,7 +410,6 @@ body{
     height: 500px;
     width: 324px;
     margin: 10px;
-   
     flex-direction: column;
   }
 
@@ -407,10 +431,118 @@ body{
   
  /* inizio quinta section */
 
-  .company{
-    height:500px;
-    background-color: darkcyan;
+
+  .company .big-square{
+   width: 100%;
+}
+
+.company .big-square .square{
+  flex-wrap: wrap;
+  width: calc(100%/3);
+  height: calc(100vw/3);
+}
+
+.company .big-square .square .small-square{
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.company .big-square .square .small-square svg{
+  color: white;
+  display: inline-block;
+  filter: invert(1);
+  width: 60%;
+  object-fit: contain;
+}
+
+.small-square.designit{
+  background-color: rgb(66, 167, 35);
+
+}
+
+.small-square.designit:hover{
+box-shadow: inset 0px 0px 0px 10px rgb(129, 235, 97);
+}
+
+.small-square.arizon{
+  background-color: rgb(68, 12, 12);
+}
+
+.small-square.arizon:hover{
+  box-shadow: inset 0px 0px 0px 10px rgb(134, 43, 43);
   }
+
+.small-square.florida{
+  background-color: rgba(32, 121, 255, 0.822);
+}
+
+.small-square.florida:hover{
+  box-shadow: inset 0px 0px 0px 10px rgba(47, 89, 153, 0.822);
+  }
+
+.small-square.topps{
+  background-color: rgb(255, 25, 9);
+}
+
+.small-square.topps:hover{
+  box-shadow: inset 0px 0px 0px 10px rgb(182, 58, 49);
+  }
+
+.small-square.bicycle{
+  background-color: rgba(255, 0, 0, 0.87);
+}
+
+.small-square.bicycle:hover{
+  box-shadow: inset 0px 0px 0px 10px rgb(224, 85, 85);
+  }
+
+.small-square.hearst{
+  background-color: rgba(144, 179, 233, 0.87);
+}
+
+.small-square.hearst:hover{
+  box-shadow: inset 0px 0px 0px 10px rgba(70, 129, 218, 0.87);;
+  }
+
+.small-square.planet{
+  background-color: rgba(2, 0, 146, 0.87);
+}
+
+.small-square.planet:hover{
+  box-shadow: inset 0px 0px 0px 10px rgba(63, 60, 228, 0.87);
+  
+  }
+
+.small-square.clear{
+  background-color: rgba(255, 251, 0, 0.87);
+}
+
+.small-square.clear:hover{
+  box-shadow: inset 0px 0px 0px 10px rgba(252, 249, 105, 0.87);;
+ }
+
+.company .big-square .square.central{
+  padding: 10px 30px;
+  overflow-y:auto;
+  background-color: lightgray;
+  flex-direction: column;
+}
+
+.square.central .svg-central{
+  height: 30%;
+  width: 50%;
+}
+
+.square.central .svg-central svg{
+  height: 100%;
+  width: 100%;
+}
+
+.square.central p, span{
+  padding: 20px 0px;
+}
   
   /* fine quinta section */
 
@@ -446,3 +578,93 @@ body{
     color: black;
     padding: 10px 45px;
   }
+  /* fine sesta section */
+
+  /* inizio settima section */
+
+.question{
+  border-bottom: 1px solid black;
+}
+
+.question h2{
+  font-size: 2rem;
+  margin-bottom: 75px;
+}
+
+.question h3 {
+  width: 100%;
+  display: inline-block;
+  padding: 30px 0px;
+  padding-right: 60px;
+  border-top:1px solid black ;
+}
+
+.question div{
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.question p{
+  display: none;
+}
+
+.question .question-text:hover p{
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+
+.question i{
+  position: absolute;
+  top: 35px;
+  right: 10px;
+}
+
+.question .question-text:hover i{
+  transform: rotate(180deg);
+}
+
+
+ /* fine settima section */
+
+/* inizio footer */
+
+footer{
+  background-color: var(--black);
+  color: white;
+}
+
+.footer-information{
+  justify-content: space-between;
+  padding: 100px 0px;
+}
+
+.footer-information .col-footer{
+  width: 200px;
+} 
+
+.footer-information .col-footer h2{
+  color: white;
+  padding: 20px 0px;
+}
+
+.footer-information .col-footer li a{
+  color: white;
+
+}
+
+.linguage span{
+  display: inline-block;
+  border-top:1px solid white;
+  padding-top: 40px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.linguage i{
+  padding: 0px 5px;
+  font-size: 0.8rem;
+}
+
+/* fine footer */
